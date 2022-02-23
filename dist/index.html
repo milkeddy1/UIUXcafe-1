@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--Code By Webdevtrick ( https://webdevtrick.com )-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Full Page Scrolling | Webdevtrick.com</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./jinx.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./swiper.css">
+    <script defer type="module" src="./app.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-top clearfix">
+            <h1 class="l-left flex items-center"><a href="#firstSection"><img class="h-20 " src="./img/arcane-logo.png"
+                        alt=""></a></h1>
+            <a class="l-right toggle-menu" href="#">
+                <i></i>
+                <i></i>
+                <i></i>
+            </a>
+        </div>
+
+        <nav class="hide">
+            <ul id="menu">
+                <li data-menuanchor="firstSection">
+                    <a href="#firstSection" title="First Section">Vi</a>
+                </li>
+                <li data-menuanchor="secondSection">
+                    <a href="#secondSection" title="Second Section">Jinx</a>
+                </li>
+                <li data-menuanchor="thirdSection">
+                    <a href="#thirdSection" title="Second Section">Caitlyn</a>
+                </li>
+                <li data-menuanchor="fourthSection">
+                    <a href="#fourthSection" title="Fourth Section">Silco</a>
+                </li>
+                <li data-menuanchor="fifthSection">
+                    <a href="#fifthSection" title="First Slide">Victor</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="fullpage">
+        <section class="bg-1 vertical-scrolling">
+            <div class="w-full mt-80 lg:mt-0  lg:flex h-full top-0 items-center">
+                <div class=" text-white w-full m-auto block lg:flex lg:w-4/5 h-2/3  justify-center items-center">
+                    <div
+                        class="vi_text leading-loose w-2/3 lg:w-full  m-auto pt-48 lg:1/2  lg:pt-0 md:text-xl lg:text-3xl  lg:leading-loose">
+                        <span
+                            class="text-5xl text-pink-400">菲艾</span>曾經是流落佐恩街頭的罪犯，她個性暴躁、衝動、令人心生畏懼，對於有權有勢的人不屑一顧。她從小就獨自一人生活，培養了敏銳的生存本能，還有惡趣味的幽默感。現在她在皮爾托福的警備隊服役，負責維護城內的治安。她手上的海克斯拳套可以輕易粉碎建築物以及那些想要造次的罪犯。
+                    </div>
+                    <div class="vi_pictures w-3/4 h-3/5 lg:1/2 m-auto mt-48 lg:ml-40 lg:w-3/5 xl:w-3/4 ">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-2 vertical-scrolling">
+            <div class="text-white">
+                <h1 class="hidden w-3/4 text-center text-3xl leading-loose m-auto lg:block">
+                    <span class="text-5xl text-blue-600">吉茵珂絲</span>
+                    來自佐恩，是一名極為瘋狂且衝動的犯罪分子。她以肆意破壞為樂，絲毫不在乎後果。她平時最愛帶著她的玩具（但其實都是一些致命武器）到處趴趴走，凡是她走過的地方必定留下一陣混亂及恐慌，而她畢生最愛的就是響徹雲霄的爆破聲以及刺眼的爆炸火光。吉茵珂絲完全無法忍受無聊的生活，隨心所欲地在各地製造混亂是她感到開心的唯一理由。
+                </h1>
+                <section class="cards__wrapper mt-20">
+                    <figure class="card">
+                        <div class="card__image--wrapper">
+                            <div class="card__image--outer">
+                                <img src="./img/jinx1.png" alt="Portrait" class="card__image" />
+                            </div>
+                        </div>
+                        <div class="card__text">
+                            <span class="card__text--inner" data-splitting>Powder</span>
+                        </div>
+                    </figure>
+                    <figure class="card">
+                        <div class="card__image--wrapper">
+                            <div class="card__image--outer">
+                                <img src="./img/jinx2.jpg" alt="Portrait" class="card__image" />
+                            </div>
+                        </div>
+                        <div class="card__text">
+                            <span class="card__text--inner" data-splitting>Jinx</span>
+                        </div>
+                    </figure>
+                </section>
+            </div>
+        </section>
+        <section class="bg-3 vertical-scrolling">
+            <div class="block md:flex items-center md:w-3/4  m-auto">
+                <div class="text-white w-3/4 m-auto  lg:text-3xl" style="line-height: 2;">
+                    <span
+                        class="text-5xl text-purple-600">凱特琳</span>以皮爾托福最優秀的執法者聞名世界，她也是幫助這座城市擺脫那些纏人犯罪分子的最佳人選。她時常和菲艾一起搭檔，在旁人眼中，她謹慎冷靜的性格與菲艾衝動火爆的個性形成強烈的對比。雖然她手裡拿著的武器是一把獨一無二的海克斯科技來福槍，但她最厲害的武器其實是她的聰明與機警。這兩項特質也使得凱特琳總是能佈下精心的陷阱，任何意圖破壞進步之城治安的不法之徒都逃不出她的手掌心。
+                </div>
+                <div class="swiper w-3/4 md:w-1/3 h-full ml-auto mt-40 ">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper m-auto  md:ml-20">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img class="w-full h-full" src="./img/caitlyn1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"><img class="w-full h-full" src="./img/caitlyn2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"><img class="w-full h-full" src="./img/caitlyn3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide"><img class="w-full h-full" src="./img/caitlyn4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div>Swipe</div>
+            </div>
+        </section>
+        <section class="bg-4 vertical-scrolling">
+            <div class="block ">
+                <div class="w-4/5 lg:w-1/2 m-auto lg:m-0 mr-auto  mt-40 text-center text-white lg:text-3xl"
+                    style="line-height: 2;">
+                    <span class="text-5xl text-gray-800">維克特</span>
+                    是創新科技時代的先驅，他將畢生心力投入在能夠使人類進步的科技上。他是完全的理想主義者，不斷試圖把佐恩人民提升至超出人類極限和理解的境界。他相信唯有接納「榮光進化」，才能讓人類隱藏的潛能徹底被激發。維克特用他經過鋼鐵和科學強化的身體，熱切地追求他心目中那光明的未來。
+                </div>
+                <div class="victor_img_container w-full lg:w-1/2 ">
+                    <div class="flex justify-center">
+                        <div class="flex">
+                            <h1 data-text="Hexpower" class="hex mt-28 ">HexPower</h1>
+                        </div>
+                    </div>
+                    <img class="victor_img w-2/3 m-auto" src="./img/victor1.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- <section class="bg-5 vertical-scrolling">
+        </section> -->
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r118/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"> </script>
+    <script src="./hover.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>

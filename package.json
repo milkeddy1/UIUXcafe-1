@@ -1,0 +1,17 @@
+{
+  "name": "scroll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "hover-effect": "^1.1.0",
+    "tailwindcss": "^3.0.23"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
